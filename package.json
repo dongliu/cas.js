@@ -1,0 +1,10 @@
+{
+  "name": "cas.js",
+  "version": "0.0.1",
+  "description": "Central Authentication Service (CAS) client for Node.js",
+  "keywords": ["cas", "central authentication service", "authentication", "client"],
+  "author": "Dong Liu <edongliu@gmail.com>",
+  "dependencies": {},
+  "main": "index",
+  "engines": { "node": "0.9 || 0.10" }
+}
