@@ -1,7 +1,7 @@
 cas.js
 ======
 
-The major motication for me to create this module is all the node.js CAS client available in github or npm that I have tried have problem with the https setting after the change made in [version 0.9.2](https://github.com/joyent/node/commit/6e2055)
+The major motivation for me to create this module is all the node.js CAS client available in github or npm that I have tried have problem with the https setting after the change made in [version 0.9.2](https://github.com/joyent/node/commit/6e2055)
 
 "tls, https: validate server certificate by default (Ben Noordhuis)"
 
