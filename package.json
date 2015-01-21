@@ -1,14 +1,28 @@
 {
   "name": "cas.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Central Authentication Service (CAS) client for Node.js",
-  "keywords": ["cas", "central authentication service", "authentication", "client"],
+  "keywords": [
+    "cas",
+    "central authentication service",
+    "authentication",
+    "client"
+  ],
   "author": "Dong Liu <edongliu@gmail.com>",
-  "dependencies": {},
-  "main": "index",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/dongliu/ca-node.git"
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "xml2js": "^0.4.4"
   },
-  "engines": { "node": "0.9 || 0.10" }
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "should": "~4.0.4"
+  },
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dongliu/ca-node.git"
+  },
+  "engines": {
+    "node": "0.9 || 0.10"
+  }
 }
