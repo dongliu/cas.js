@@ -1,6 +1,6 @@
 {
   "name": "cas.js",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Central Authentication Service (CAS) client for Node.js",
   "keywords": [
     "cas",
@@ -19,7 +19,7 @@
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dongliu/ca-node.git"
+    "url": "https://github.com/dongliu/cas.js.git"
   },
   "engines": {
     "node": "0.9 || 0.10"
