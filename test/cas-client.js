@@ -66,7 +66,7 @@ describe('cas-client', function () {
       rl.question('username: ', function (name) {
         hidden('password: ', function (pass) {
           rl.close();
-          cas.login(name, pass, auth.service, lt, function (e, res, body) {
+          cas.login({username: name, password: pass, loginticket: lt}, function (e, res, body) {
             if (e) {
               console.log(e);
               done();
@@ -74,7 +74,6 @@ describe('cas-client', function () {
             console.log(res.headers);
             console.log(body);
             console.log(res.headers.location);
-            // var query = url.parse(res.headers.location, true).query;
             ticket = url.parse(res.headers.location, true).query.ticket;
             console.log(ticket);
             done();
@@ -87,13 +86,13 @@ describe('cas-client', function () {
   describe('#validate()', function () {
     this.timeout(600000);
     it('should get the validation result', function (done) {
-      cas.validate(ticket, function (e, res, validated) {
+      cas.validate(ticket, function (e, res, result) {
         if (e) {
           console.log(e);
           done();
         }
         console.log(res.headers);
-        console.log('validated: ' + validated);
+        console.log(result);
         done();
       });
     });
